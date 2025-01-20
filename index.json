@@ -44,9 +44,19 @@
       "imageURL": "https://github.com/shosetsuorg/extensions/raw/dev/icons/VipNovel.png",
       "id": 586,
       "lang": "en",
-      "ver": "2.1.2",
+      "ver": "2.1.3",
       "libVer": "1.0.0",
       "md5": "911fedf88cf4fad6ccc1561e625dd219"
+    },
+    {
+      "name": "BoxNovel",
+      "fileName": "BoxNovel",
+      "imageURL": "https://github.com/shosetsuorg/extensions/raw/dev/icons/BoxNovel.png",
+      "id": 2,
+      "lang": "en",
+      "ver": "3.1.1",
+      "libVer": "1.0.0",
+      "md5": "c82a5cdff73aee7385e2da5cec371f89"
     }
   ]
 }

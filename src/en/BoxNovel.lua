@@ -1,19 +1,13 @@
--- {"id":586,"ver":"2.1.3","libVer":"1.0.0","author":"TechnoJo4","dep":["Madara>=2.2.0"]}
+-- {"id":2,"ver":"3.1.1","libVer":"1.0.0","author":"Doomsdayrs","dep":["Madara>=2.2.0"]}
 
 return Require("Madara")("https://novgo.co", {
-	id = 586,
-	name = "VipNovel",
-	imageURL = "https://github.com/shosetsuorg/extensions/raw/dev/icons/VipNovel.png",
-
-	-- defaults values
-	novelListingURLPath = "novel",
-	shrinkURLNovel = "novel",
+	id = 2,
+	name = "BoxNovel",
+	imageURL = "https://github.com/shosetsuorg/extensions/raw/dev/icons/BoxNovel.png",
 
 	genres = {
 		"Action",
-		"Adult",
 		"Adventure",
-		"Boy Love",
 		"Comedy",
 		"Drama",
 		"Ecchi",
@@ -23,7 +17,6 @@ return Require("Madara")("https://novgo.co", {
 		"Historical",
 		"Horror",
 		"Josei",
-		"LGBT+",
 		"Martial Arts",
 		"Mature",
 		"Mecha",
@@ -40,12 +33,9 @@ return Require("Madara")("https://novgo.co", {
 		"Sports",
 		"Supernatural",
 		"Tragedy",
-		"Video Games",
 		"Wuxia",
 		"Xianxia",
 		"Xuanhuan",
-		"Yaoi",
-		"Yuri"
+		"Yaoi"
 	}
-
 })
