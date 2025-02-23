@@ -1,4 +1,4 @@
--- {"id":586,"ver":"2.1.3","libVer":"1.0.0","author":"TechnoJo4","dep":["Madara>=2.2.0"]}
+-- {"id":586,"ver":"2.1.4","libVer":"1.0.0","author":"TechnoJo4","dep":["Custom>=3"]}
 
 return Require("Madara")("https://novgo.co", {
 	id = 586,

@@ -1,40 +1,8 @@
 {
   "libraries": [
     {
-      "name": "247truyen",
-      "ver": "1.1.2"
-    },
-    {
-      "name": "CommonCSS",
-      "ver": "1.0.1"
-    },
-    {
-      "name": "dkjson",
-      "ver": "1.0.1"
-    },
-    {
-      "name": "NovelFull",
-      "ver": "2.0.6"
-    },
-    {
-      "name": "url",
-      "ver": "1.0.0"
-    },
-    {
-      "name": "utf8",
-      "ver": "1.0.0"
-    },
-    {
-      "name": "WWVolare",
-      "ver": "1.2.2"
-    },
-    {
-      "name": "Madara",
-      "ver": "2.9.1"
-    },
-    {
-      "name": "XenForo",
-      "ver": "1.0.5"
+      "name": "Custom",
+      "ver": "3"
     }
   ],
   "scripts": [
@@ -44,7 +12,7 @@
       "imageURL": "https://github.com/shosetsuorg/extensions/raw/dev/icons/VipNovel.png",
       "id": 586,
       "lang": "en",
-      "ver": "2.1.3",
+      "ver": "2.1.4",
       "libVer": "1.0.0",
       "md5": "911fedf88cf4fad6ccc1561e625dd219"
     },
@@ -54,7 +22,7 @@
       "imageURL": "https://github.com/shosetsuorg/extensions/raw/dev/icons/BoxNovel.png",
       "id": 2,
       "lang": "en",
-      "ver": "3.1.1",
+      "ver": "3.1.2",
       "libVer": "1.0.0",
       "md5": "c82a5cdff73aee7385e2da5cec371f89"
     }
