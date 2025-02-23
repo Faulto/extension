@@ -1,4 +1,4 @@
--- {"id":2,"ver":"3.1.2","libVer":"1.0.0","author":"Doomsdayrs","dep":["Custom>=3"]}
+-- {"id":2,"ver":"3.1.2","libVer":"1.0.0","author":"Doomsdayrs","dep":["Custom>=3.0.0"]}
 
 return Require("Madara")("https://novgo.co", {
 	id = 2,
