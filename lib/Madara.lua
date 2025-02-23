@@ -23,7 +23,7 @@ local defaults = {
 	-- If chaptersScriptLoaded is true, then a ajax request has to be made to get the chapter list.
 	-- Otherwise the chapter list is already loaded when loading the novel overview.
 	chaptersScriptLoaded = true,
-	chaptersListSelector= "li.wp-manga-chapter",
+	chaptersListSelector = "li[class*='wp-manga-chapter']",
 	-- If ajaxUsesFormData is true, then a POST request will be send to baseURL/ajaxFormDataUrl.
 	-- Otherwise to baseURL/shrinkURLNovel/novelurl/ajaxSeriesUrl .
 	ajaxUsesFormData = false,
@@ -253,9 +253,15 @@ function defaults:parseNovel(url, loadChapters)
 			else
 				-- Used by BoxNovel, Foxaholic, NovelTrench, LightNovelHeaven, VipNovel and WoopRead.
 				doc = RequestDocument(
-						POST(self.baseURL .. "/" .. self.shrinkURLNovel .. "/" .. url .. self.ajaxSeriesUrl,
-								nil, nil)
-				)
+					POST(self.baseURL .. "/" .. self.shrinkURLNovel .. "/" .. url .. self.ajaxSeriesUrl,
+						HeadersBuilder()
+						:add("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
+						:add("X-Requested-With", "XMLHttpRequest")
+						:add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
+						:add("Referer", self.baseURL .. "/" .. self.shrinkURLNovel .. "/" .. url)  -- Adjust as necessary
+							:build()
+					)
+					)
 			end
 		end
 
